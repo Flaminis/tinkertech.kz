@@ -44,7 +44,6 @@ const About = () => (
   <section className="section has-y-space">
     <div className="grid-x">
       <div className="cell large-10">
-        <h3 className="section__title" />
         <p className="section__lead">
           We love taking products from vision to reality.
         </p>
