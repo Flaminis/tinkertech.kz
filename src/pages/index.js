@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Hero from "../components/home/hero"
 import About from "../components/home/about"
+import TrustedBy from "../components/home/trustedBy"
 import Services from "../components/home/services"
 import Contacts from "../components/home/concats"
 import Career from "../components/home/career"
@@ -12,6 +13,7 @@ import Career from "../components/home/career"
 const IndexPage = () => (
   <Layout>
     <SEO
+      title={"We Build Apps"}
       keywords={[
         `Outsource Software Development`,
         `application`,
@@ -23,6 +25,7 @@ const IndexPage = () => (
     />
     <Hero />
     <About />
+    <TrustedBy />
     <Services />
     <Career />
     <Contacts />

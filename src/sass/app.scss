@@ -56,6 +56,9 @@
 @include foundation-visibility-classes;
 // @include foundation-prototype-classes;
 
+// Vendor
+@import "vendor/swiper";
+
 body {
   background-image: url("../images/hero-bg.png");
   background-repeat: no-repeat;
@@ -154,5 +157,62 @@ body {
 .services__item {
   &:not(:last-child) {
     margin-bottom: 1rem;
+  }
+}
+
+.stories {
+  padding-top: 2rem;
+  margin: 0 -2px;
+
+  .swiper-pagination {
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+  }
+  .swiper-pagination-bullet {
+    flex: 1 1 auto;
+    width: auto;
+    height: 2px;
+    border-radius: 0;
+    margin: 0 2px;
+    background-color: #e2e2e2;
+    position: relative;
+    opacity: 1;
+    animation-name: story;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    background-image: linear-gradient(90deg, #000, #000);
+    background-position: left top;
+    background-size: 0 auto;
+    background-repeat: no-repeat;
+    animation-play-state: paused;
+    &.swiper-pagination-bullet-active {
+      animation-play-state: running;
+    }
+  }
+}
+
+@keyframes story {
+  to {
+    background-size: 100% auto;
+  }
+}
+
+.story__slide {
+  text-align: center;
+}
+
+.logos {
+  display: flex;
+}
+
+.logos__item {
+  filter: grayscale(100%);
+  &:hover {
+    filter: grayscale(0);
+  }
+  &:not(:last-child) {
+    margin-right: 80px;
   }
 }
