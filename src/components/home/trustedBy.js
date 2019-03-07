@@ -8,6 +8,7 @@ const TrustedBy = () => (
   <section className="section has-y-space">
     <div className="grid-x">
       <div className="cell">
+        <h3 className="section__title">Trusted By</h3>
         <div className={"logos"}>
           <div className={"logos__item"}>
             <img src={logo2} alt="" />
