@@ -5,7 +5,7 @@
  * See: https://www.gatsbyjs.org/docs/static-query/
  */
 
-import React from "react"
+import React, { Component } from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
@@ -14,33 +14,38 @@ import Footer from "./Footer"
 import Nav from "./Nav"
 import "../sass/app.scss"
 
-const Layout = ({ children }) => (
-  <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
+class Layout extends Component {
+  toggleMenu = () => {
+    document.body.classList.toggle("show-menu")
+  }
+  render() {
+    const { children } = this.props
+    return (
+      <StaticQuery
+        query={graphql`
+          query SiteTitleQuery {
+            site {
+              siteMetadata {
+                title
+              }
+            }
           }
-        }
-      }
-    `}
-    render={data => (
-      <>
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <div className="grid-container">
-          <div className="grid-x">
-            <div className="cell small-2">
-              <Nav />
-            </div>
-            <main className="cell small-10">{children}</main>
-          </div>
-        </div>
-        <Footer />
-      </>
-    )}
-  />
-)
+        `}
+        render={data => (
+          <>
+            <Header
+              siteTitle={data.site.siteMetadata.title}
+              toggleMenu={this.toggleMenu}
+            />
+            <Nav toggleMenu={this.toggleMenu} />
+            <main>{children}</main>
+            <Footer />
+          </>
+        )}
+      />
+    )
+  }
+}
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,

@@ -7,7 +7,7 @@ import Hero from "../components/home/hero"
 import About from "../components/home/about"
 import TrustedBy from "../components/home/trustedBy"
 import Services from "../components/home/services"
-import Contacts from "../components/home/concats"
+import Contacts from "../components/home/contacts"
 import Career from "../components/home/career"
 
 const IndexPage = () => (
