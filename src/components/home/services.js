@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 const Services = () => (
   <section id="services" className="section has-y-space services">
@@ -23,9 +24,9 @@ const Services = () => (
             <p>
               <small>* series A+ startups get 20% discount.</small>
             </p>
-            <a href="#" className={"button"}>
+            <Link to="/form" className={"button"}>
               Start Your Project
-            </a>
+            </Link>
           </div>
           <div className="services__item">
             <h4 className={"h2"}>Interface Design</h4>
@@ -34,9 +35,9 @@ const Services = () => (
               strongpoint. This is why we create interface designs to order
               instead of creating apps using client designs.
             </p>
-            <a href="#" className={"button"}>
+            <Link to="/form" className={"button"}>
               REQUEST DESIGN
-            </a>
+            </Link>
           </div>
           <div className="services__item">
             <h4 className={"h2"}>App Audit and consulting</h4>
@@ -46,9 +47,9 @@ const Services = () => (
               following types of checks: Feature, Usability, Capability,
               Quality, Security.
             </p>
-            <a href="#" className={"button"}>
+            <Link to="/form" className={"button"}>
               REQUEST AUDIT
-            </a>
+            </Link>
           </div>
         </div>
       </div>

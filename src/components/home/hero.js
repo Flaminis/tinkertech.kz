@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 const HeroSection = () => (
   <section className={"hero"}>
@@ -15,9 +16,9 @@ const HeroSection = () => (
             builds software for the world's best businesses.
           </p>
           <div>
-            <a href="#" className={"button"}>
+            <Link to="/form" className={"button"}>
               <strong>Start Your Project</strong>
-            </a>
+            </Link>
           </div>
           <div>
             <a href="#" className={"button hollow hero__more"}>

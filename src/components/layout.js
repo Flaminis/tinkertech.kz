@@ -11,6 +11,7 @@ import { StaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import Footer from "./Footer"
+import Contacts from "../components/contacts"
 import Nav from "./Nav"
 import "../sass/app.scss"
 
@@ -39,6 +40,7 @@ class Layout extends Component {
             />
             <Nav toggleMenu={this.toggleMenu} />
             <main>{children}</main>
+            <Contacts />
             <Footer />
           </>
         )}

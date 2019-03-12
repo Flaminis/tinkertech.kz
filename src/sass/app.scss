@@ -60,15 +60,26 @@
 @import "vendor/swiper";
 
 body {
+  &.home {
+    background-image: url("../images/astronaut.png");
+    background-repeat: no-repeat;
+    background-position: right 30% bottom 2rem;
+    background-size: 200% auto;
+    @include breakpoint(large) {
+      background-image: url("../images/hero-bg.png"),
+        url("../images/astronaut.png");
+      background-position: right top, left 10% bottom 2rem;
+      background-size: auto, auto;
+    }
+  }
+
   background-image: url("../images/astronaut.png");
   background-repeat: no-repeat;
   background-position: right 30% bottom 2rem;
   background-size: 200% auto;
   @include breakpoint(large) {
-    background-image: url("../images/hero-bg.png"),
-      url("../images/astronaut.png");
-    background-position: right top, left 10% bottom 2rem;
-    background-size: auto, auto;
+    background-position: left 10% bottom 2rem;
+    background-size: auto;
   }
 
   &.show-menu {
@@ -99,7 +110,7 @@ body {
     background-color: transparent;
     width: auto;
     height: auto;
-    top: auto;
+    top: 0;
     left: auto;
     transform: translate3d(0, 0, 0);
     padding: 0;
@@ -163,10 +174,10 @@ body {
   padding: 24px 0;
   @include breakpoint(large) {
     padding: 80px 0;
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
+    // position: absolute;
+    // width: 100%;
+    // top: 0;
+    // left: 0;
   }
 }
 
@@ -358,13 +369,64 @@ body {
   }
 }
 
-a.button {
-  text-decoration: none;
+.button {
+  @at-root {
+    a#{&} {
+      text-decoration: none;
+    }
+  }
+  &.is-angled {
+    border-radius: 0;
+  }
 }
 
 .contacts__item {
   margin-bottom: 4rem;
   @include breakpoint(large) {
     margin-bottom: 0;
+  }
+}
+
+.switch-group {
+  display: flex;
+}
+
+.switch-group__item {
+  flex: 1;
+
+  & input[type="radio"],
+  & input[type="checkbox"] {
+    display: none;
+
+    &:checked ~ label {
+      background-color: map-get($map: $foundation-palette, $key: primary);
+      color: #ffffff;
+    }
+  }
+  & label {
+    background: #ffffff;
+    border: 2px solid rgba(35, 188, 142, 0.25);
+    display: block;
+    margin: 0;
+    padding: 8px 24px;
+    font-weight: 500;
+    font-size: 18px;
+    @include breakpoint(large) {
+      font-size: 24px;
+    }
+  }
+}
+
+.switch-group__col {
+  flex: 1;
+}
+
+.switch-group__row {
+  margin-bottom: 2rem;
+}
+
+.flex-col-large-down {
+  @include breakpoint(large down) {
+    flex-direction: column;
   }
 }

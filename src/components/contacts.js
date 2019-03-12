@@ -13,33 +13,37 @@ const Contacts = () => (
         <div className="cell large-2 large-offset-2">
           <div className="contacts__item">
             <p>
-              <a href="#">Instagram</a>
+              <a target="_blank" href="https://www.facebook.com/tinkertechdev/">
+                Facebook
+              </a>
             </p>
             <p>
-              <a href="#">Facebook</a>
-            </p>
-            <p>
-              <a href="#">LinkedIn</a>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/company/18734863/"
+              >
+                LinkedIn
+              </a>
             </p>
           </div>
         </div>
         <div className="cell large-3">
           <div className="contacts__item">
             <p>
-              <a href="mailto:hello@tinkertech.kz">hello@tinkertech.kz</a>
+              <a href="mailto:dos@tinkertech.kz">dos@tinkertech.kz</a>
             </p>
             <p>
               <a href="https://t.me/tinkertech">t.me/tinkertech</a>
             </p>
             <p>
-              <a href="tel:+7708731 65 89">+7 (708) 731 65 89</a>
+              <a href="tel:+77478877263">+7 (747) 88 77 263</a>
             </p>
           </div>
         </div>
         <div className="cell large-4">
           <div className="contacts__item">
-            <strong>Almaty</strong>
-            <p>Luganskaya Street, 99A</p>
+            {/* <strong>Almaty</strong>
+            <p>Luganskaya Street, 99A</p> */}
             <strong>Moscow</strong>
             <p>Alyab'yeva Street, 6</p>
             <p>Let’s have 5 o’clock tea</p>
