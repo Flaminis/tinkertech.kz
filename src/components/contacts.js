@@ -42,11 +42,11 @@ const Contacts = () => (
         </div>
         <div className="cell large-4">
           <div className="contacts__item">
-            {/* <strong>Almaty</strong>
-            <p>Luganskaya Street, 99A</p> */}
-            <strong>Moscow</strong>
+            <strong>Almaty</strong>
+            <p>Luganskaya Street, 99A</p>
+            {/* <strong>Moscow</strong>
             <p>Alyab'yeva Street, 6</p>
-            <p>Let’s have 5 o’clock tea</p>
+            <p>Let’s have 5 o’clock tea</p> */}
           </div>
         </div>
       </div>
