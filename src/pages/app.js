@@ -94,6 +94,7 @@ class MobileAppForm extends Component {
                           <div className="switch-group__item" key={item.value}>
                             <Field
                               type="radio"
+                              name="budget"
                               value={item.value}
                               id={item.value}
                               checked={values.budget === item.value}
