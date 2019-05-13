@@ -24,7 +24,7 @@ const Services = () => (
             <p>
               <small>* series A+ startups get 20% discount.</small>
             </p>
-            <Link to="/form" className={"button"}>
+            <Link to="/app" className={"button"}>
               Start Your Project
             </Link>
           </div>
@@ -35,7 +35,7 @@ const Services = () => (
               strongpoint. This is why we create interface designs to order
               instead of creating apps using client designs.
             </p>
-            <Link to="/form" className={"button"}>
+            <Link to="/design" className={"button"}>
               REQUEST DESIGN
             </Link>
           </div>
@@ -47,7 +47,7 @@ const Services = () => (
               following types of checks: Feature, Usability, Capability,
               Quality, Security.
             </p>
-            <Link to="/form" className={"button"}>
+            <Link to="/consult" className={"button"}>
               REQUEST AUDIT
             </Link>
           </div>

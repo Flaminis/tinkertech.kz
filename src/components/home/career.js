@@ -17,8 +17,12 @@ const Career = () => (
             We have a lot of work and we need the best people
           </p>
           <div>
-            <span>5 vacancies</span>&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="#" className="button hollow is-marginless">
+            {/* <span>5 vacancies</span>&nbsp;&nbsp;&nbsp;&nbsp; */}
+            <a
+              href="https://hh.kz/employer/78220"
+              target="_blank"
+              className="button hollow is-marginless"
+            >
               See jobs
             </a>
           </div>

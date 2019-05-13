@@ -61,19 +61,19 @@
 
 body {
   &.home {
-    background-image: url("../images/astronaut.png");
-    background-repeat: no-repeat;
-    background-position: right 30% bottom 2rem;
-    background-size: 200% auto;
-    @include breakpoint(large) {
-      background-image: url("../images/hero-bg.png"),
-        url("../images/astronaut.png");
-      background-position: right top, left 10% bottom 2rem;
-      background-size: auto, auto;
-    }
+    // background-image: url("../images/astronaut.png");
+    // background-repeat: no-repeat;
+    // background-position: right 30% bottom 2rem;
+    // background-size: 200% auto;
+    // @include breakpoint(large) {
+    //   background-image: url("../images/hero-bg.png"),
+    //     url("../images/astronaut.png");
+    //   background-position: right top, left 10% bottom 2rem;
+    //   background-size: auto, auto;
+    // }
   }
 
-  background-image: url("../images/astronaut.png");
+  background-image: url("../images/astronaut.svg");
   background-repeat: no-repeat;
   background-position: right 30% bottom 2rem;
   background-size: 200% auto;
@@ -209,15 +209,55 @@ body {
   }
 }
 
-.hero {
-  min-height: 100vh;
-  background-image: url("../images/hero-bg-small.png");
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  min-height: 667px;
+.hero-animation {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.hero-animation__guy {
+  position: absolute;
+  bottom: -3%;
+  right: -3%;
+  width: 85%;
+  height: auto;
 
   @include breakpoint(large) {
-    background: none;
+    width: 797px;
+    height: 597px;
+    right: 1%;
+  }
+}
+
+.hero-animation__code {
+  position: absolute;
+  clip-path: url("#clipping-mobile");
+  width: 80%;
+  height: 533px;
+  background: linear-gradient(0deg, #76d9bb, #76d9bb), #b5e2d4;
+  color: rgba(#ffffff, 0.5);
+  bottom: 0;
+  right: 0;
+  @include breakpoint(large) {
+    right: 0;
+    top: 0;
+    clip-path: url("#clipping");
+    width: 800px;
+    height: 780px;
+    font-size: 24px;
+  }
+}
+
+.hero {
+  min-height: 100vh;
+  min-height: 667px;
+  position: relative;
+
+  @include breakpoint(large) {
     padding: 200px 0;
   }
 }
@@ -377,7 +417,8 @@ body {
       text-decoration: none;
     }
   }
-  &.is-angled {
+  &.is-angled,
+  &.square {
     border-radius: 0;
   }
 }
@@ -391,10 +432,15 @@ body {
 
 .switch-group {
   display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid rgba(35, 188, 142, 0.25);
+  border-bottom: 1px solid rgba(35, 188, 142, 0.25);
+  border-right: 1px solid rgba(35, 188, 142, 0.25);
+  border-left: 1px solid rgba(35, 188, 142, 0.25);
 }
 
 .switch-group__item {
-  flex: 1;
+  flex: 1 1 33.3333%;
 
   & input[type="radio"],
   & input[type="checkbox"] {
@@ -407,7 +453,10 @@ body {
   }
   & label {
     background: #ffffff;
-    border: 2px solid rgba(35, 188, 142, 0.25);
+    border-top: 1px solid rgba(35, 188, 142, 0.25);
+    border-bottom: 1px solid rgba(35, 188, 142, 0.25);
+    border-right: 1px solid rgba(35, 188, 142, 0.25);
+    border-left: 1px solid rgba(35, 188, 142, 0.25);
     display: block;
     margin: 0;
     padding: 8px 24px;

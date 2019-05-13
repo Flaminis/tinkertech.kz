@@ -1,16 +1,16 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React, { Component } from "react"
-import Logo from "../images/logo.svg"
-import Burger from "../images/burger.svg"
+import Logo from "../images/logo.inline.svg"
+import Burger from "../images/burger.inline.svg"
 
-const Header = ({ toggleMenu }) => (
+const Header = ({ showMenu }) => (
   <header className={"header"}>
     <div className={"grid-container"}>
       <div className="grid-x">
         <div className="cell">
           <div className="header__wrap">
-            <Burger className={"header__burger"} onClick={toggleMenu} />
+            <Burger className={"header__burger"} onClick={showMenu} />
             <h1 style={{ margin: 0 }}>
               <Link
                 to="/"

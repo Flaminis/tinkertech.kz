@@ -4,19 +4,28 @@ import {
   animateScroll as scroll,
   scrollSpy,
   scroller,
+  Events,
 } from "react-scroll"
 
-import Close from "../images/times.svg"
+import Close from "../images/times.inline.svg"
 
 class Nav extends Component {
   componentDidMount() {
+    const { closeMenu } = this.props
     scrollSpy.update()
+
+    Events.scrollEvent.register("begin", function(to, element) {
+      closeMenu()
+    })
+  }
+  componentWillUnmount() {
+    Events.scrollEvent.remove("end")
   }
   render() {
-    const { toggleMenu } = this.props
+    const { closeMenu } = this.props
     return (
       <nav className={"nav"}>
-        <Close className={"nav__close"} onClick={toggleMenu} />
+        <Close className={"nav__close"} onClick={closeMenu} />
         <ul className={"nav__menu"}>
           <li className={"nav__menu-item"}>
             <Link
@@ -26,7 +35,6 @@ class Nav extends Component {
               spy
               to="about"
               className={"nav__menu-link"}
-              onClick={toggleMenu}
             >
               About
             </Link>
@@ -39,7 +47,6 @@ class Nav extends Component {
               spy
               to="trustedBy"
               className={"nav__menu-link"}
-              onClick={toggleMenu}
             >
               Trusted by
             </Link>
@@ -52,7 +59,6 @@ class Nav extends Component {
               spy
               to="services"
               className={"nav__menu-link"}
-              onClick={toggleMenu}
             >
               Services
             </Link>
@@ -65,7 +71,6 @@ class Nav extends Component {
               spy
               to="works"
               className={"nav__menu-link"}
-              onClick={toggleMenu}
             >
               Works
             </Link>
@@ -78,7 +83,6 @@ class Nav extends Component {
               spy
               to="insights"
               className={"nav__menu-link"}
-              onClick={toggleMenu}
             >
               Insights
             </Link>
@@ -91,7 +95,6 @@ class Nav extends Component {
               spy
               to="careers"
               className={"nav__menu-link"}
-              onClick={toggleMenu}
             >
               Careers
             </Link>
@@ -104,7 +107,6 @@ class Nav extends Component {
               spy
               to="contacts"
               className={"nav__menu-link"}
-              onClick={toggleMenu}
             >
               Contacts
             </Link>
