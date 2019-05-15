@@ -55,7 +55,9 @@ class FormEnd extends Component {
         </p>
         <br />
         <br />
-        {status && status.msg && <div>{status.msg}</div>}
+        {status && status.msg && (
+          <div className={"callout alert"}>{status.msg}</div>
+        )}
         <div>
           <button
             type="submit"
