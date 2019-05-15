@@ -11,6 +11,7 @@ import {
 } from "../form/MobileAppForm"
 
 import FormEnd from "../components/formEnd"
+import { sendForm } from "../services"
 
 const initialValues = {
   type: "complex",
@@ -40,13 +41,7 @@ class MobileAppForm extends Component {
                 initialValues={initialValues}
                 validationSchema={formSchema}
                 onSubmit={(values, actions) => {
-                  console.log(values)
-                  fetch("//tinker-express.localhost/mailer", {
-                    method: "POST",
-                    body: {
-                      ...values,
-                    },
-                  }).then(
+                  sendForm(values).then(
                     success => {
                       actions.setSubmitting(false)
                     },
