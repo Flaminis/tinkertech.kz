@@ -30,13 +30,13 @@ const Contacts = () => (
         <div className="cell large-3">
           <div className="contacts__item">
             <p>
-              <a href="mailto:dos@tinkertech.kz">dos@tinkertech.kz</a>
+              <a href="mailto:zkenes@tinkertech.kz">zkenes@tinkertech.kz</a>
             </p>
-            <p>
+            {/* <p>
               <a href="https://t.me/tinkertech">t.me/tinkertech</a>
-            </p>
+            </p> */}
             <p>
-              <a href="tel:+77478877263">+7 (747) 88 77 263</a>
+              <a href="tel:+77012794080">+7 (701) 279 4080</a>
             </p>
           </div>
         </div>
