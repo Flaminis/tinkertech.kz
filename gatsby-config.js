@@ -1,5 +1,6 @@
 module.exports = {
   siteMetadata: {
+    siteUrl: `https://tinkertech.kz`,
     title: `tinker[tech]`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
@@ -57,5 +58,9 @@ module.exports = {
         trackingId: "UA-140249025-1",
       },
     },
+    {
+      resolve: `gatsby-plugin-sitemap`,
+    },
+    "gatsby-plugin-robots-txt",
   ],
 }

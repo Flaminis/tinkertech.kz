@@ -34,6 +34,14 @@ function SEO({ description, lang, meta, keywords, title }) {
       }}
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
+      keywords={[
+        `Outsource Software Development`,
+        `application`,
+        `react`,
+        `nodejs`,
+        `iOS`,
+        `Android`,
+      ]}
       meta={[
         {
           name: `description`,
@@ -77,7 +85,22 @@ function SEO({ description, lang, meta, keywords, title }) {
             : []
         )
         .concat(meta)}
-    />
+    >
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "http://schema.org",
+          "@type": "Organization",
+          url: "https://www.tinkertech.kz",
+          name: "Tinker Tecch",
+          contactPoint: {
+            "@type": "ContactPoint",
+            telephone: "+7 (701) 279 4080",
+            telephone: "+7 (777) 8338777",
+            contactType: "Менеджер",
+          },
+        })}
+      </script>
+    </Helmet>
   )
 }
 

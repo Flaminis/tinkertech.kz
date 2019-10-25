@@ -7,7 +7,7 @@ const Footer = () => (
         <div className="cell">
           All rights reserved
           <br />
-          by "Tinker Technologies" LLP
+          by "Tinker Tech" LLP
           <br />
           Kazakhstan, Almaty • {new Date().getFullYear()}
         </div>

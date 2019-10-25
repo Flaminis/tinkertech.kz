@@ -17,17 +17,7 @@ const IndexPage = () => (
         class: "home",
       }}
     />
-    <SEO
-      title={"We Build Apps"}
-      keywords={[
-        `Outsource Software Development`,
-        `application`,
-        `react`,
-        `nodejs`,
-        `iOS`,
-        `Android`,
-      ]}
-    />
+    <SEO title={"We Build Apps"} />
     <Hero />
     <About />
     <TrustedBy />

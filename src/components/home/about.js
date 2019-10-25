@@ -61,11 +61,11 @@ const About = () => (
           <p />
         </div>
       </div>
-      <div className="grid-x large-offset-2">
+      {/* <div className="grid-x large-offset-2">
         <div className="cell">
           <Story slides={slides} delay={5000} />
         </div>
-      </div>
+      </div> */}
     </div>
   </section>
 )
