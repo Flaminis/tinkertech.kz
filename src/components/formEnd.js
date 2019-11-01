@@ -51,7 +51,9 @@ class FormEnd extends Component {
         <br />
         <p className="h5">
           By submitting this application, you agree with our{" "}
-          <a href="#">Personal Data Processing Policy</a>
+          <a href="/files/Tinker%20Privacy%20Policy.pdf">
+            Personal Data Processing Policy
+          </a>
         </p>
         <br />
         <br />
