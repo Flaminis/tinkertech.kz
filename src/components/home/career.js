@@ -19,7 +19,7 @@ const Career = () => (
           <div>
             {/* <span>5 vacancies</span>&nbsp;&nbsp;&nbsp;&nbsp; */}
             <a
-              href="https://hh.kz/employer/78220"
+              href="https://www.linkedin.com/company/tinkertechnology/jobs/"
               target="_blank"
               className="button hollow is-marginless"
             >
