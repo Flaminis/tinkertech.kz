@@ -20,7 +20,7 @@ const Contacts = () => (
             <p>
               <a
                 target="_blank"
-                href="https://www.linkedin.com/company/18734863/"
+                href="https://www.linkedin.com/company/tinkertechnology"
               >
                 LinkedIn
               </a>
