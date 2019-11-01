@@ -18,7 +18,7 @@ class FormEnd extends Component {
             placeholder="Describe your problem or attach file with description"
           />
         </div>
-        <label htmlFor="attachFile" className="button hollow square">
+        {/* <label htmlFor="attachFile" className="button hollow square">
           <span className="h4">Attach File</span>
         </label>
         <input
@@ -29,7 +29,7 @@ class FormEnd extends Component {
           onChange={event => {
             setFieldValue("file", event.currentTarget.files[0])
           }}
-        />
+        /> */}
 
         <br />
         <br />
