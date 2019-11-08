@@ -4,7 +4,7 @@ import FormError from "../components/formError"
 
 class FormEnd extends Component {
   render() {
-    const { setFieldValue, errors, touched, isSubmitting, status } = this.props
+    const { isSubmitting, status } = this.props
     return (
       <div>
         <br />
@@ -18,18 +18,6 @@ class FormEnd extends Component {
             placeholder="Describe your problem or attach file with description"
           />
         </div>
-        {/* <label htmlFor="attachFile" className="button hollow square">
-          <span className="h4">Attach File</span>
-        </label>
-        <input
-          type="file"
-          name="attachedFile"
-          id="attachFile"
-          className="show-for-sr"
-          onChange={event => {
-            setFieldValue("file", event.currentTarget.files[0])
-          }}
-        /> */}
 
         <br />
         <br />

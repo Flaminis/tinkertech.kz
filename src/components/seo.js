@@ -94,8 +94,7 @@ function SEO({ description, lang, meta, keywords, title }) {
           name: "Tinker Tecch",
           contactPoint: {
             "@type": "ContactPoint",
-            telephone: "+7 (701) 279 4080",
-            telephone: "+7 (777) 8338777",
+            telephone: "+7 (777) 833 87 77",
             contactType: "Менеджер",
           },
         })}

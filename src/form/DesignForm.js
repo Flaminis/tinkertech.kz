@@ -1,4 +1,4 @@
-import { string, email, object } from "yup"
+import { string, object } from "yup"
 import { errors } from "../strings"
 
 export const schema = object().shape({

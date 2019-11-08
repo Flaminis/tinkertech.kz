@@ -1,6 +1,5 @@
 import React, { Component, Fragment } from "react"
-import { Formik, Field, FieldArray, Form, ErrorMessage } from "formik"
-import FormError from "../components/formError"
+import { Formik, Field, FieldArray, Form } from "formik"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"

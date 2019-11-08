@@ -34,6 +34,7 @@ const HeroSection = () => (
               href="https://forbes.kz/made_in_kz/kak_molodyie_programmistyi_brosayut_vyizov_servisnikam/"
               target="_blank"
               className={"button hollow hero__more"}
+              rel="noopener noreferrer"
             >
               <strong>READ more about us</strong>
             </a>

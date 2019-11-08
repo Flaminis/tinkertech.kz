@@ -13,7 +13,11 @@ const Contacts = () => (
         <div className="cell large-2 large-offset-2">
           <div className="contacts__item">
             <p>
-              <a target="_blank" href="https://www.facebook.com/tinkertechdev/">
+              <a
+                target="_blank"
+                href="https://www.facebook.com/tinkertechdev/"
+                rel="noopener noreferrer"
+              >
                 Facebook
               </a>
             </p>
@@ -21,6 +25,7 @@ const Contacts = () => (
               <a
                 target="_blank"
                 href="https://www.linkedin.com/company/tinkertechnology"
+                rel="noopener noreferrer"
               >
                 LinkedIn
               </a>

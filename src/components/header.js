@@ -1,6 +1,6 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import React, { Component } from "react"
+import React from "react"
 import Logo from "../images/logo.inline.svg"
 import Burger from "../images/burger.inline.svg"
 

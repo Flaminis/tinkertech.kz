@@ -1,11 +1,5 @@
 import React, { Component } from "react"
-import {
-  Link,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller,
-  Events,
-} from "react-scroll"
+import { Link, scrollSpy, Events } from "react-scroll"
 
 import Close from "../images/times.inline.svg"
 

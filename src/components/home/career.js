@@ -22,6 +22,7 @@ const Career = () => (
               href="https://www.linkedin.com/company/tinkertechnology/jobs/"
               target="_blank"
               className="button hollow is-marginless"
+              rel="noopener noreferrer"
             >
               See jobs
             </a>
