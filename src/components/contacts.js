@@ -12,7 +12,7 @@ const Contacts = () => (
       <div className="grid-x">
         <div className="cell large-2 large-offset-2">
           <div className="contacts__item">
-            <p>
+            {/* <p>
               <a
                 target="_blank"
                 href="https://www.facebook.com/tinkertechdev/"
@@ -20,7 +20,7 @@ const Contacts = () => (
               >
                 Facebook
               </a>
-            </p>
+            </p> */}
             <p>
               <a
                 target="_blank"
@@ -28,6 +28,15 @@ const Contacts = () => (
                 rel="noopener noreferrer"
               >
                 LinkedIn
+              </a>
+            </p>
+            <p>
+              <a
+                target="_blank"
+                href="/files/Tinker%20Tech%20Presentation.pdf"
+                rel="noopener noreferrer"
+              >
+                Presentation
               </a>
             </p>
           </div>
