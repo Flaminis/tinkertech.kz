@@ -29,6 +29,42 @@ const Services = () => (
             </Link>
           </div>
           <div className="services__item">
+            <h4 className={"h2"}>Backend Development</h4>
+            <p className={"section__lead"}>
+              One of our main areas is the development of a backend for highly
+              loaded systems. Each project is created with close integration
+              with the customer side to achieve the desired results.
+            </p>
+
+            <p className={"section__lead"}>We work with:</p>
+
+            <ul className={"section__lead no-bullet"}>
+              <li>— Series A+ Startups</li>
+              <li>— Businesses</li>
+              <li>— Digital Agencies</li>
+            </ul>
+
+            <p>
+              <small>* series A+ startups get 20% discount.</small>
+            </p>
+
+            <Link to="/form" className={"button"}>
+              REQUEST DEVELOPMENT
+            </Link>
+          </div>
+          <div className="services__item">
+            <h4 className={"h2"}>Web Development</h4>
+            <p className={"section__lead"}>
+              Particular attention in our company is paid to web development. We
+              are engaged in the development of various web solutions of various
+              nature and scale.
+            </p>
+            <Link to="/form" className={"button"}>
+              REQUEST WEB DEVELOPMENT
+            </Link>
+          </div>
+
+          <div className="services__item">
             <h4 className={"h2"}>Interface Design</h4>
             <p className={"section__lead"}>
               Having the best team of interface designers has always been our
